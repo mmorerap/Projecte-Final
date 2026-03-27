@@ -1,2 +1,24 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+﻿using Microsoft.Extensions.Configuration;
+// using dbdemo.Services;
+// using dbdemo.Endpoints;
+
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+
+// Configuració
+builder.Configuration
+    .SetBasePath(AppContext.BaseDirectory)
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+string connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
+//DatabaseConnection dbConn = new DatabaseConnection(connectionString);
+
+WebApplication webApp = builder.Build();
+
+//webApp.MapProductEndpoints(dbConn);
+
+webApp.Run();
+
+
+
+
