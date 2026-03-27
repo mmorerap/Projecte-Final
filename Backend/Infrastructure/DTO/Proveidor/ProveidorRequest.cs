@@ -1,4 +1,4 @@
-
+namespace Backend.Infrastructure.DTO;
 public class ProveedorRequest
 {
     public string Nom { get; set; }
