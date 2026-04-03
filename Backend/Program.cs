@@ -1,6 +1,7 @@
 ﻿
 ﻿using Microsoft.Extensions.Configuration;
-// using dbdemo.Services;
+using Backend.Services;
+using Backend.Application.Proveidor;
 // using dbdemo.Endpoints;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -11,11 +12,14 @@ builder.Configuration
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
-//DatabaseConnection dbConn = new DatabaseConnection(connectionString);
+DatabaseConnection dbConn = new DatabaseConnection(connectionString);
 
 WebApplication webApp = builder.Build();
 
 //webApp.MapProductEndpoints(dbConn);
+
+webApp.MapProveidorEndpoints(dbConn);
+
 
 webApp.Run();
 
