@@ -1,6 +1,6 @@
 namespace Backend.Domain;
 
-public class Proveedor
+public class ProveidorDomain
 {
     public string Nombre { get; set; }
     public string Direccion { get; set; }
