@@ -29,9 +29,15 @@ public class DatabaseConnection
             return false;
         }
     }
-    public void Close()
+
+    public SqlConnection? GetSqlConnection1()
+    {
+        return sqlConnection;
+    }
+
+    public void Close(SqlConnection? sqlConnection1)
     {
         Console.WriteLine("Tanquem la connexió");
-        sqlConnection.Close();
+        sqlConnection1.Close();
     }
 }
