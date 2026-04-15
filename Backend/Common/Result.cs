@@ -1,3 +1,5 @@
+using Backend.Infrastructure.DTO;
+
 namespace Backend.Common;
 
 public class Result
@@ -15,5 +17,10 @@ public class Result
 
     public static Result Ok() => new Result(true);
     public static Result Failure(string message, string? code) =>
-        new Result(false, message, code); 
+        new Result(false, message, code);
+
+    internal static ProveidorResponse Fail(string? errorMessage)
+    {
+        throw new NotImplementedException();
+    }
 }

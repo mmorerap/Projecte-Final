@@ -1,6 +1,6 @@
 using Backend.Infrastructure.Persistence;
 //Demanar Informacio a la BDD
-namespace dbdemo.DTO;
+namespace Backend.Infrastructure.DTO;
 
 public record ProveidorResponse(Guid Id, string? Nombre, string? Direccion, string? Ciudad, string? CodigoPostal, string? Pais, string? Telefono, string? Fax, string? email, string? nif_iva) 
 {

@@ -1,7 +1,8 @@
-﻿
+
 ﻿using Microsoft.Extensions.Configuration;
 using Backend.Services;
-using Backend.Application.Proveidor;
+using Backend.Application.Endpoints;
+
 // using dbdemo.Endpoints;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -19,6 +20,8 @@ WebApplication webApp = builder.Build();
 //webApp.MapProductEndpoints(dbConn);
 
 webApp.MapProveidorEndpoints(dbConn);
+webApp.MapOrdresEndpoints(dbConn);
+
 
 
 webApp.Run();

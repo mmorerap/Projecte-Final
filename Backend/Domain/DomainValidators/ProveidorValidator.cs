@@ -2,7 +2,7 @@
 using Backend.Domain;
 using Backend.Common;
 
-namespace dbdemo.Domain.Validators;
+namespace Backend.Domain.Validators;
 
 public static class ProveidorDValidator
 {
