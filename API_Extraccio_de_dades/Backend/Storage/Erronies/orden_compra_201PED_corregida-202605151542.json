@@ -1,0 +1,96 @@
+{
+  "proveedor": {
+    "nombre": "BOSS AUTO",
+    "direccion": null,
+    "ciudad": null,
+    "pais": null,
+    "telefono": null,
+    "fax": null,
+    "email": null,
+    "nif_iva": null,
+    "siret": null,
+    "iban": null,
+    "bic": null
+  },
+  "cliente": {
+    "nombre": "REPUESTOS GARCIA, S.L.",
+    "direccion": "CALLE MAYOR, 45",
+    "ciudad": "MADRID",
+    "codigo_postal": "28013",
+    "pais": "SPA",
+    "telefono": "0034913456789",
+    "nif_iva": "B-87654321",
+    "codigo_cliente": "BOSS"
+  },
+  "orden": {
+    "numero": "201/PED",
+    "fecha": "13/05/2026",
+    "fecha_recepcion": null,
+    "modo_pago": null,
+    "gestionado_por": null,
+    "direccion_entrega": null
+  },
+  "lineas": [
+    {
+      "codigo_cliente": null,
+      "codigo_proveedor": "770487",
+      "descripcion": "Mesa de madera rectangular 120x60 cm",
+      "cantidad": 40.0,
+      "precio_unitario": 45.0,
+      "descuento": null,
+      "precio_neto": null,
+      "importe_ht": null,
+      "tva": null
+    },
+    {
+      "codigo_cliente": null,
+      "codigo_proveedor": "216739",
+      "descripcion": "Silla de oficina ergonomica con ruedas",
+      "cantidad": 144.0,
+      "precio_unitario": 35.5,
+      "descuento": null,
+      "precio_neto": null,
+      "importe_ht": null,
+      "tva": null
+    },
+    {
+      "codigo_cliente": null,
+      "codigo_proveedor": "126225",
+      "descripcion": "Lampara de pie LED regulable",
+      "cantidad": 6.0,
+      "precio_unitario": 29.9,
+      "descuento": null,
+      "precio_neto": null,
+      "importe_ht": null,
+      "tva": null
+    },
+    {
+      "codigo_cliente": null,
+      "codigo_proveedor": "877572",
+      "descripcion": "Armario de madera 3 puertas correderas",
+      "cantidad": 4.0,
+      "precio_unitario": 120.0,
+      "descuento": null,
+      "precio_neto": null,
+      "importe_ht": null,
+      "tva": null
+    },
+    {
+      "codigo_cliente": null,
+      "codigo_proveedor": "388389",
+      "descripcion": "Estanteria metalica 5 baldas reforzadas",
+      "cantidad": 8.0,
+      "precio_unitario": 19.8,
+      "descuento": null,
+      "precio_neto": null,
+      "importe_ht": null,
+      "tva": null
+    }
+  ],
+  "totales": {
+    "total_ht": 7729.8,
+    "total_iva": 1623.26,
+    "total_ttc": 9353.06,
+    "moneda": "EUR"
+  }
+}
