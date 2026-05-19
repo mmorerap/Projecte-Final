@@ -59,3 +59,4 @@ C:\Users\marcm\Desktop\pf\Frontend\bin\Debug\net9.0-windows\Microsoft.Extensions
 C:\Users\marcm\Desktop\pf\Frontend\bin\Debug\net9.0-windows\Microsoft.Extensions.Primitives.dll
 C:\Users\marcm\Desktop\pf\Frontend\bin\Debug\net9.0-windows\Newtonsoft.Json.dll
 C:\Users\marcm\Desktop\pf\Frontend\bin\Debug\net9.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\marcm\Desktop\pf\Frontend\obj\Debug\net9.0-windows\OCRDesktop.sourcelink.json
